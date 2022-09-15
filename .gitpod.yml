@@ -1,0 +1,22 @@
+# check gitpod.io/docs
+tasks:
+  - init: npm install
+    command: |
+      export HMR_HOST=`gp url 3000`
+      npm run dev
+
+ports:
+  - port: 3000
+    onOpen: open-browser
+vscode:
+  extensions:
+    - svelte.svelte-vscode
+
+
+#every time the code changes on github master branch
+#tasks ☝️ : will run
+github:
+  prebuilds:
+    master: true
+    branches: true
+    pullRequests: true
