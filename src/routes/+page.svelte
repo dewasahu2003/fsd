@@ -1,3 +1,11 @@
-<h1>Welcome SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-<h1>not able to show another page</h1>
+<script>
+    import TodoItem from "$lib/todo-component.svelte"
+    const title="TODO"
+</script>
+
+<svelte:head>
+    <title>{title}</title>
+</svelte:head>
+
+<h1>{title}</h1>
+<TodoItem></TodoItem>
