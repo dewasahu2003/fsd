@@ -1,4 +1,4 @@
-
+# check gitpod.io/docs
 tasks:
   - init: npm install
     command: |
@@ -11,3 +11,12 @@ ports:
 vscode:
   extensions:
     - svelte.svelte-vscode
+
+
+#every time the code changes on github master branch
+#tasks ☝️ : will run
+github:
+  prebuilds:
+    master: true
+    branches: true
+    pullRequests: true
