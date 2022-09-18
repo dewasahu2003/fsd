@@ -1,11 +1,22 @@
+<script lang="ts">
+  import type { Todo } from "./type/type";
+
+  export let todo: Todo;
+</script>
+
 <div class="todo">
   <form action="" method="">
-    <input type="hidden" name="done" value="" />
+    <input type="hidden" name="done" value={todo.done} />
     <button aria-label="status" class="toggle" />
   </form>
 
   <form action="" method="" class="text">
-    <input type="text" name="save todo" value="" placeholder="enter todo" />
+    <input
+      type="text"
+      name="save todo"
+      value={todo.text}
+      placeholder="enter todo"
+    />
     <button class="save" />
   </form>
 
