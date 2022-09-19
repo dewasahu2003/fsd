@@ -20,11 +20,12 @@
     <button class="save" />
   </form>
 
-  <form action="" method="">
+  <form action="/todos/{todo.id}.json?_method=DELETE" method="POST">
     <button aria-label="delete" class="delete" />
   </form>
 </div>
 
+<!--html has POST,GET methos so added - json_method=DELETE-->
 <style>
   .todo {
     display: grid;

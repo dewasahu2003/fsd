@@ -8,7 +8,7 @@ import { error, type Actions, type Load } from '@sveltejs/kit';
 
 export const load: PageServerLoad = async () => {
 
-    const res = await fetch("http://localhost:5174/todos/todoapi");
+    const res = await fetch("http://localhost:5173/todos/todoapi");
 
     if (res.status === 200) {
         return { todos: (await res.json() as Todo[]) }
@@ -26,5 +26,9 @@ export const load: PageServerLoad = async () => {
 
 }
 
+export const actions: Actions = {
+    gettodo: () => { },
+    deletetodo: () => { }
+};
 
 

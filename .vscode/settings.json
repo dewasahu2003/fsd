@@ -1,0 +1,8 @@
+{
+    "workbench.colorTheme": "Div's Theme",
+    "workbench.colorCustomizations": {
+        "editorError.foreground": "#00fe3b",
+        "editorWarning.foreground": "#04ffff",
+        "editorInfo.foreground": "#eaff00"
+    }
+}
